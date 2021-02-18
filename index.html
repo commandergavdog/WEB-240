@@ -1,20 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Cleanup KC</title>
+  <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
-    <div id="wrapper">
-        <h1>WEB-240</h1>
-        <hr>
+  <div class="site-wrap">
+  
+    <header id="home">
+      <div>
+        <img id="header_logo" src="./assets//images/CleanupKC_allWhite_logo.png">
+      </div>
+    </header>
 
-        <p>I hope GitHub pages will work for hosting. Here is to a great semester!</p>
-        <br>
-        <h3 id="cheers">Cheers!</h3>
-    </div>
-    
+    <nav id="navbar">
+      <ul>
+        <li class="logo"></li>
+        <li><a id="homeButton" >Home</a></li>
+        <li><a id="aboutButton" >About</a></li>
+        <li><a id="galleryButton">Gallery</a></li>
+        <li><a id="eventsButton">Events</a></li>
+        <li><a id="contactButton">Contact</a></li>
+      </ul>
+    </nav>
+
+      <section id="about"> 
+        <h1>What's Cleanup KC About</h1>
+        <p id="about_paragraph">
+          Cleanup KC is a community-driven volunteer group focused on cleaning up litter in the Kansas City area.
+        </p>
+      </section>
+
+      <section id="gallery">
+        <h1>Gallery</h1>
+        <div id="instafeed"></div>
+        <aside>Follow us on Facebook and Instagram!</aside>
+      </section>
+
+      <section id="events">
+        <h1>Events</h1>
+        <article>
+        This is where events will be published.  
+        </article>
+
+      </section>
+
+      <section id="contact">
+        <h1>Contact</h1>
+        <div itemscope>
+          <p>My name is
+            <span itemprop="name">Frank</span>.</p>
+          <p>This site is called 
+            <span itemprop="website">Cleanup KC</span>.</p>
+          <p>We are from
+            <span itemprop="city">Kansas City</span>.</p>
+        </div>
+
+      </section>
+
+      <footer id="footer">
+        <span id="socialIcons"></span>
+        <span>Cleanup KC | <script>document.write(new Date().getFullYear());</script> </span>
+      </footer>
+  </div>
+<script src="./assets/logic.js"></script>
+
+<!-- Playing around with adding an instagram feed -->
+<!-- <script src='https://cleanupkcinstagram.herokuapp.com/token.js'></script>
+<script src="./js/instafeed.min.js"></script>
+<script type="text/javascript">
+  var feed = new Instafeed({
+    accessToken: 'your-token',
+    limit: 12,
+    template: '<a href="{{link}}"><img class="image_img" title="{{caption}}" src="{{image}}" /><div class="image_overlay"><div class="image_title">{{caption}}</div></div></a>'
+  });
+  feed.run();
+</script> -->
+
 </body>
 </html>
