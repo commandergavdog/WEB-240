@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Cleanup KC</title>
   <link rel="stylesheet" href="./assets/styles.css">
 </head>
+
 <body>
   <div class="site-wrap">
-  
+
     <header id="home">
       <div>
         <img id="header_logo" src="./assets//images/CleanupKC_allWhite_logo.png">
@@ -17,82 +19,110 @@
     <nav id="navbar">
       <ul>
         <li class="logo"></li>
-        <li><a id="homeButton" >Home</a></li>
-        <li><a id="aboutButton" >About</a></li>
+        <li><a id="homeButton">Home</a></li>
+        <li><a id="aboutButton">About</a></li>
         <li><a id="galleryButton">Gallery</a></li>
         <li><a id="eventsButton">Events</a></li>
         <li><a id="contactButton">Contact</a></li>
       </ul>
     </nav>
 
-      <section id="about"> 
-        <h1>What's Cleanup KC About</h1>
-        <p id="about_paragraph">
-          Cleanup KC is a community-driven volunteer group focused on cleaning up litter in the Kansas City area.
+    <section id="about">
+      <h1>What's Cleanup KC About</h1>
+      <p id="about_paragraph">
+        Cleanup KC is a community-driven volunteer group focused on cleaning up litter in the Kansas City area.
+      </p>
+    </section>
+
+    <section id="gallery">
+      <h1>Gallery</h1>
+      <div id="instafeed"></div>
+      <aside>Follow us on Facebook and Instagram!</aside>
+    </section>
+
+    <section id="events">
+      <h1>Events</h1>
+
+      <div id="bigBox">
+
+        <div id="boxRow">
+          <div class="box">DATE & TIME</div>
+          <div class="box">LOCATION</div>
+          <div class="box">INFORMATION</div>
+        </div>
+
+        <div id="boxRow">
+          <div class="box">Saturday, March 20, 2021 </div>
+          <div class="box">Shawnee Mission Park</div>
+          <div class="box">Litter Collection</div>
+        </div>
+
+        <div id="boxRow">
+          <div class="box">Saturday, March 20, 2021 </div>
+          <div class="box">Shawnee Mission Park</div>
+          <div class="box">Litter Collection</div>
+        </div>
+
+        <div id="boxRow">
+          <div class="box">Saturday, March 20, 2021 </div>
+          <div class="box">Shawnee Mission Park</div>
+          <div class="box">Litter Collection</div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <div itemscope>
+        <p>My name is
+          <span itemprop="name">Frank</span>.
         </p>
-      </section>
+        <p>This site is called
+          <span itemprop="website">Cleanup KC</span>.
+        </p>
+        <p>We are from
+          <span itemprop="city">Kansas City</span>.
+        </p>
+      </div>
 
-      <section id="gallery">
-        <h1>Gallery</h1>
-        <div id="instafeed"></div>
-        <aside>Follow us on Facebook and Instagram!</aside>
-      </section>
+    </section>
 
-      <section id="events">
-        <h1>Events</h1>
+    <section id="recycling">
+      <h1>Sort Your Recycling</h1>
+      <div id="sorting-box">
+        <ol data-draggable="target">
+          <li class="first">To be sorted:</li>
+          <li data-draggable="item">Glass</li>
+          <li data-draggable="item">Soup Can</li>
+          <li data-draggable="item">Shampoo Bottles</li>
+          <li data-draggable="item">Junk Mail</li>
+          <li data-draggable="item">Food Waste</li>
+        </ol>
 
-        <div id="bigBox">
+        <ol data-draggable="target">
+          <li class="first">Recycleable</li>
+        </ol>
 
-          <div id="boxRow">
-            <div class="box">DATE & TIME</div>
-            <div class="box">LOCATION</div>
-            <div class="box">INFORMATION</div>
-          </div>
+        <ol data-draggable="target">
+          <li class="first">Non-Recycleable</li>
+        </ol>
+      </div>
+    </section>
 
-          <div id="boxRow">
-            <div class="box">Saturday, March 20, 2021 </div>
-            <div class="box">Shawnee Mission Park</div>
-            <div class="box">Litter Collection</div>
-          </div>
-
-          <div id="boxRow">
-            <div class="box">Saturday, March 20, 2021 </div>
-            <div class="box">Shawnee Mission Park</div>
-            <div class="box">Litter Collection</div>
-          </div>
-
-          <div id="boxRow">
-            <div class="box">Saturday, March 20, 2021 </div>
-            <div class="box">Shawnee Mission Park</div>
-            <div class="box">Litter Collection</div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <section id="contact">
-        <h1>Contact</h1>
-        <div itemscope>
-          <p>My name is
-            <span itemprop="name">Frank</span>.</p>
-          <p>This site is called 
-            <span itemprop="website">Cleanup KC</span>.</p>
-          <p>We are from
-            <span itemprop="city">Kansas City</span>.</p>
-        </div>
-
-      </section>
-
-      <footer id="footer">
-        <span id="socialIcons"></span>
-        <span>Cleanup KC | <script>document.write(new Date().getFullYear());</script> </span>
-      </footer>
+    <footer id="footer">
+      <span id="socialIcons"></span>
+      <span>Cleanup KC |
+        <script>document.write(new Date().getFullYear());</script>
+      </span>
+    </footer>
   </div>
-<script src="./assets/logic.js"></script>
+  <script src="./assets/logic.js"></script>
+  <script src="./assets/script.js"></script>
 
-<!-- Playing around with adding an instagram feed -->
-<!-- <script src='https://cleanupkcinstagram.herokuapp.com/token.js'></script>
+  <!-- Playing around with adding an instagram feed -->
+  <!-- <script src='https://cleanupkcinstagram.herokuapp.com/token.js'></script>
 <script src="./js/instafeed.min.js"></script>
 <script type="text/javascript">
   var feed = new Instafeed({
@@ -104,4 +134,5 @@
 </script> -->
 
 </body>
+
 </html>
