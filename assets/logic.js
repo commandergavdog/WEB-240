@@ -60,9 +60,9 @@ logo.addEventListener("click", function(){
     smoothScroll("#home", 500);  
 })
 
-const home = document.querySelector("#homeButton");
+const home = document.querySelector("#learnButton");
 home.addEventListener("click", function(){
-    smoothScroll("#home", 500);  
+    smoothScroll("#learn", 500);  
 })
 
 const about = document.querySelector("#aboutButton");

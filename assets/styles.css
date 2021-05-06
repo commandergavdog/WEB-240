@@ -23,7 +23,40 @@ html {
     text-align: center;
     color: #3c5b74;
   }
-  
+
+  #aboutWrapper {
+    display: flex;
+    margin: 1.5em;  
+  }
+  .aboutParagraph {
+    flex: 50%;    
+  }
+
+  #sliderImage {
+    background-repeat: no-repeat;
+  }
+
+  .divider {
+    width: 2px;
+    margin: 6px 0;
+    background: #3c5b74;
+  }
+
+  footer {
+    height: 5vh;
+    background-color: wheat;
+    color: #3c5b74;    
+    flex: 1;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+  }
+
+  .fab {
+    color: #3c5b74;
+  }
+
   header {
     /* Setting to 93vh to put nav on bottom. Is there a better way to do this? */
     height: 93vh;
@@ -114,13 +147,19 @@ html {
   #events {    
     background-color: white;
   }
-
-  #contact {    
+  #learn {    
     background-color: wheat;
+  }
+  #contact {    
+    background-color: white;
   }
 
   h1{
     font-size: 2em;
+  }
+
+  form {
+    color: white;
   }
 
   #bigBox{
@@ -129,9 +168,13 @@ html {
     margin: 1em 2em;
     height: 75vh;
     overflow: hidden;
-    padding: 3.5em 2em;
-    
+    padding: 3.5em 2em;    
   }
+
+  #contactHeader {
+    color: white;
+  } 
+
   .box{
     flex-basis: 33;
     flex-grow: 1;
@@ -175,7 +218,7 @@ html {
     padding:0.5em;
     border:2px solid #888;
     border-radius:0.2em;
-    background:#ddd;
+    background:white;
     color:#555;
 }
 

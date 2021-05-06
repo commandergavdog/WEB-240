@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Cleanup KC</title>
   <link rel="stylesheet" href="./assets/styles.css">
+  <script src="https://kit.fontawesome.com/442f629b66.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,25 +20,62 @@
     <nav id="navbar">
       <ul>
         <li class="logo"></li>
-        <li><a id="homeButton">Home</a></li>
         <li><a id="aboutButton">About</a></li>
         <li><a id="galleryButton">Gallery</a></li>
         <li><a id="eventsButton">Events</a></li>
+        <li><a id="learnButton">Learn</a></li>
         <li><a id="contactButton">Contact</a></li>
       </ul>
     </nav>
 
     <section id="about">
       <h1>What's Cleanup KC About</h1>
-      <p id="about_paragraph">
-        Cleanup KC is a community-driven volunteer group focused on cleaning up litter in the Kansas City area.
-      </p>
+      <div id="aboutWrapper">
+        <p class="aboutParagraph">
+          Cleanup KC is a community-driven volunteer group focused on cleaning up litter in the Kansas City area. <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget accumsan lacus. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla tincidunt ornare nisl in tempus.
+          Morbi placerat nisl ut risus convallis hendrerit. Suspendisse commodo enim vitae augue posuere, at ornare
+          purus varius. Phasellus sit amet leo mollis arcu interdum cursus.
+          Vivamus a pellentesque nibh, sed rhoncus odio. Pellentesque egestas venenatis lacus ut fermentum. Proin tempus
+          ornare auctor.
+          Vestibulum volutpat tellus ante, sit amet sagittis enim congue nec. Aenean neque nibh, pharetra vel purus vel,
+          dignissim elementum sem. Morbi nec egestas elit. Maecenas pretium, risus vel eleifend molestie, risus leo
+          pellentesque dui, a egestas risus lectus non lacus. Morbi non fermentum libero. Nunc gravida vitae mauris
+          vitae pellentesque. Maecenas ac dolor mollis, porta nisl vel, fermentum sem. Fusce nibh quam, finibus sit amet
+          fringilla et, posuere id lorem. Pellentesque viverra enim vel sem ultricies, vitae aliquet sem ornare. Orci
+          varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ac fringilla est.
+
+
+        </p>
+        <div class="divider"></div>
+        <p class="aboutParagraph">
+          Nulla hendrerit nisi facilisis libero scelerisque, a tristique leo dapibus. Curabitur semper felis non felis
+          imperdiet, sit amet rutrum elit accumsan. Vivamus sed dolor vel enim condimentum tristique. Curabitur nec
+          finibus massa. Fusce ultrices elit aliquam odio eleifend ultricies sit amet at elit. Integer lobortis congue
+          sodales. Nulla nec lorem tellus. Proin semper ipsum non nisi aliquet finibus. Aliquam laoreet nulla lacus, eu
+          tempor lacus iaculis et. Etiam at efficitur orci. Nulla facilisi. Nullam vestibulum orci eleifend risus
+          malesuada, ut malesuada est egestas. Vivamus vel posuere lorem. Vivamus non magna nulla. Nulla pharetra
+          imperdiet varius. Ut rutrum gravida lorem nec consequat.
+          Vestibulum volutpat tellus ante, sit amet sagittis enim congue nec. Aenean neque nibh, pharetra vel purus vel,
+          dignissim elementum sem. Morbi nec egestas elit. Maecenas pretium, risus vel eleifend molestie, risus leo
+          pellentesque dui, a egestas risus lectus non lacus. Morbi non fermentum libero. Nunc gravida vitae mauris
+          vitae pellentesque. Maecenas ac dolor mollis, porta nisl vel, fermentum sem. Fusce nibh quam, finibus sit amet
+          fringilla et, posuere id lorem. Pellentesque viverra enim vel sem ultricies, vitae aliquet sem ornare. Orci
+          varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ac fringilla est.
+
+
+        </p>
+      </div>
     </section>
 
     <section id="gallery">
       <h1>Gallery</h1>
       <div id="instafeed"></div>
       <aside>Follow us on Facebook and Instagram!</aside>
+      <div id="slider">
+        <img id="sliderImage" src="./assets/images/slider.PNG" alt="">
+      </div>
     </section>
 
     <section id="events">
@@ -68,29 +106,12 @@
           <div class="box">Shawnee Mission Park</div>
           <div class="box">Litter Collection</div>
         </div>
-
       </div>
-
     </section>
 
-    <section id="contact">
-      <h1>Contact</h1>
-      <div itemscope>
-        <p>My name is
-          <span itemprop="name">Frank</span>.
-        </p>
-        <p>This site is called
-          <span itemprop="website">Cleanup KC</span>.
-        </p>
-        <p>We are from
-          <span itemprop="city">Kansas City</span>.
-        </p>
-      </div>
 
-    </section>
-
-    <section id="recycling">
-      <h1>Sort Your Recycling</h1>
+    <section id="learn">
+      <h1>Learn to Sort Your Recycling</h1>
       <div id="sorting-box">
         <ol data-draggable="target">
           <li class="first">To be sorted:</li>
@@ -111,11 +132,47 @@
       </div>
     </section>
 
-    <footer id="footer">
-      <span id="socialIcons"></span>
-      <span>Cleanup KC |
-        <script>document.write(new Date().getFullYear());</script>
-      </span>
+
+    <section id="contact">
+
+      <div id="bigBox">
+        <div>
+          <div>
+            <h1 id="contactHeader">Contact
+              <hr>
+            </h1>
+          </div>
+          <form>
+            <p>Name</p>
+            <input type="text">
+
+            <p>Email</p>
+            <input type="text">
+
+            <p>Message</p>
+            <textarea type="text"></textarea>
+
+            <input type="submit" value="Send message">
+          </form>
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <footer>
+      <div id="footerWrap">
+        <span>Cleanup KC
+          <script>document.write(new Date().getFullYear());</script> |
+        </span>
+        <span id="socialIcons">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a>
+          <a href="https://www.instagram.com/cleanup_kc/" target="_blank"><i
+              class="fab fa-instagram-square fa-lg"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-lg"></i></a>
+        </span>
+      </div>
     </footer>
   </div>
   <script src="./assets/logic.js"></script>
